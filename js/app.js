@@ -9,3 +9,13 @@ quickPick.controller('StatesController', function ($scope, $http) {
             Console.log(data);
         });
 });
+
+quickPick.controller('LotteriesController', function ($scope, $http) {
+    $http.get('data/lotteries.json')
+        .success(function(data, status, headers, config) {
+            $scope.lotteries = data;
+        })
+        .error(function(data, status, headers, config) {
+            Console.log(data);
+        });
+});

@@ -21,11 +21,11 @@
     <![endif]-->
 </head>
 <body>
-
+<br/> 
 <section class="container" ng-controller="StatesController">
     <div class="row">
-        <div class="col-md-1 col-sm-2 col-xs-3 text-center" ng-repeat="state in states">
-            <a class="btn btn-lg btn-primary btn-block" href="{{ state.abbreviation }}">{{ state.abbreviation }}</a>
+        <div class="col-md-2 col-sm-2 col-xs-4 text-center" ng-repeat="state in states">
+            <a class="btn btn-lg btn-primary btn-block" href="/#/{{ state.abbreviation }}">{{ state.abbreviation }}</a><br/>
         </div>
     </div>
 </section>
